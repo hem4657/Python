@@ -1,0 +1,33 @@
+                                                 **Step-by-Step Process:**
+
+1.=======>>>    git init
+
+2.=======>>>    git add .
+
+3.=======>>>    git commit -m "First commit"
+
+[{(=======>>>    git remote remove origin new origin bnane ke liye)}]
+
+4.=======>>>    git remote add origin https://github.com/username/repository-name.git
+
+5.=======>>>    git push -u origin main
+
+[{(=======>>>    git push -u origin main --force	)}]  ===>> agar main me purani file htake new file daalna
+ 
+
+
+> Agar aapka branch "master" ho toh:
+
+
+git push -u origin master
+
+
+
+## 🎉 Ho gaya! Aapki file ab GitHub par upload ho gayi hai.
+
+
+                                                                    ** आगे से जब भी आप काम करें, ये commands follow करें: **
+
+git add .
+git commit -m "Your message"
+git push
