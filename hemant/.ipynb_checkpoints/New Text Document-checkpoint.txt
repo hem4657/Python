@@ -1,0 +1,67 @@
+The error you're seeing:
+
+```
+error: src refspec main does not match any
+```
+
+means that the local branch `main` does not exist, so Git has nothing to push.
+
+---
+
+### ✅ Here's how you can fix it step by step:
+
+#### 1. **Check your current branch**
+
+Run this command:
+
+```bash
+git branch
+```
+
+You might see something like:
+
+```
+* master
+```
+
+or another branch name. If you see `master` or something else instead of `main`, that’s why the error occurred.
+
+#### 2. **Rename the branch to `main`** *(Optional but recommended if GitHub expects `main`)*
+
+If you want to rename your current branch to `main`:
+
+```bash
+git branch -m main
+```
+
+#### 3. **Push to GitHub**
+
+Now push the renamed branch:
+
+```bash
+git push -u origin main --force
+```
+
+---
+
+### 🔍 Alternatively: Just push the existing branch
+
+If you don't want to rename the branch, just push the current one (e.g. `master`):
+
+```bash
+git push -u origin master --force
+```
+
+---
+
+### 💡 Bonus Tip: Check remote branch names
+
+If you're unsure which branches exist on GitHub:
+
+```bash
+git ls-remote origin
+```
+
+---
+
+Let me know if you want to create a new `main` branch or stick with `master`.
